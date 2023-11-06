@@ -2,10 +2,10 @@
   lib,
   pkg-config,
   openssl,
-  opencv3,
+  opencv,
   clang,
   libclang,
-  ffmpeg_4,
+  ffmpeg,
   alsa-lib,
   fetchFromGitHub,
   rustPlatform
@@ -30,8 +30,8 @@ rustPlatform.buildRustPackage rec {
     openssl.dev
     alsa-lib.dev
     libclang.lib
-    ffmpeg_4.dev
-    opencv3
+    ffmpeg.dev
+    opencv
   ];
 
   nativeBuildInputs = [
