@@ -44,8 +44,8 @@ rustPlatform.buildRustPackage rec {
   meta = with lib; {
     description = "Terminal Media Player";
     homepage = "https://github.com/maxcurzi/tplay";
-    license = licenses.mit;
+    platform = platforms.linux;
+    license = with lib.licenses; [ mit ];
     maintainers = with maintainers; [ demine ];
-    platform = platforms.all;
   };
 }
