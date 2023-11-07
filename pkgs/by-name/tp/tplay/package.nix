@@ -46,6 +46,6 @@ rustPlatform.buildRustPackage rec {
     homepage = "https://github.com/maxcurzi/tplay";
     platform = platforms.linux;
     license = with lib.licenses; [ mit ];
-    maintainers = with maintainers; [ demine ];
+    maintainers = with lib.maintainers; [ demine ];
   };
 }
